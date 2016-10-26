@@ -1,6 +1,6 @@
 package exercise1;
 
-public class Benz implements Car, Host {
+public class Benz implements Car, Host {	//implements는 다중 상속 가능
 	String name = "벤츠";
 	String host = "상근";
 
@@ -20,7 +20,7 @@ public class Benz implements Car, Host {
 	}	
 }
 
-class ab_Benz extends ab_Car {
+class ab_Benz extends ab_Car {				// JAVA에서는 추상클래스를 통해서 다중상속이 불가능 하여 implements를 사용한다.
 	String name = "벤츠";
 
 	@Override

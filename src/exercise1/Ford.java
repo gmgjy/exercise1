@@ -1,6 +1,6 @@
 package exercise1;
 
-public class Ford implements Car, Host {
+public class Ford implements Car, Host {	//implements는 다중 상속 가능
 	String name = "포드";
 	String host = "형준";
 
@@ -18,11 +18,9 @@ public class Ford implements Car, Host {
 	public void whos_host() {
 		System.out.println(name + "는 " + host + "의 것입니다.");
 	}
-
 }
 
-
-class ab_Ford extends ab_Car {
+class ab_Ford extends ab_Car {				//추상클래스를 통해서는 다중상속이 불가
 	String name = "포드";
 
 	@Override
