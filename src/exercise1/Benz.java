@@ -11,18 +11,17 @@ public class Benz implements Car, Host {
 
 	@Override
 	public void refueling() {
-		System.out.println(host + "가 " + name + "에 주유중입니다.");
+		System.out.println(host + "이 " + name + "에 주유중입니다.");
 	}
 
 	@Override
 	public void whos_host() {
 		System.out.println(name + "는 " + host + "의 것입니다.");
-	}
-
+	}	
 }
 
-class ab_Ford extends ab_Car {
-	String name = "포드";
+class ab_Benz extends ab_Car {
+	String name = "벤츠";
 
 	@Override
 	public void run() {
@@ -30,7 +29,7 @@ class ab_Ford extends ab_Car {
 	}
 
 	@Override
-	public void refuel(String name) {
+	public void refuel(String street) {
+		System.out.println(name + "가 " + street + "위를 달립니다.");
 	}
 }
-
