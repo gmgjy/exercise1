@@ -1,0 +1,13 @@
+
+
+*.class
+*.jar
+/bin
+/classpath
+/settings
+/target
+.classpath
+.settings
+.target
+.bin
+
